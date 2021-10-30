@@ -1,1 +1,1 @@
-# Face-Recognition-with-Raspberry-Pi-4-OpenCV
+# Face Recognition with Raspberry Pi 4 (OpenCV)
