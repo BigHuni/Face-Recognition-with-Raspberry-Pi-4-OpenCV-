@@ -1,13 +1,35 @@
-# Face Recognition with Raspberry Pi 4 (OpenCV)
+# 🎞 라즈베리파이4와 OpenCV를 활용한 얼굴 인식 머신러닝
+- Raspberry Pi 4를 이용하여 실시간 얼굴 인식을 위한 OpenCV 기술 활용
 
-### OpenCV technology for real-time face recognition using Raspberry Pi 4
-###### Connect the Raspberry Pi with the camera and proceed as follows
 
-###### Step 1 Data Collection
-- This is a code that pre-captures the face of the person you want to recognize with the camera linked to the Raspberry Pi 4 and saves it in the PC. The more you shoot, the more data accumulates.
+## 🔸 목적
+- 카메라로 인식된 사람의 이미지를 파일로 저장한 뒤, 학습시켜 각 사람의 특징을 추출해내고, 이를 통하여 카메라의 영상에서 실시간으로 사람들을 구별
+- 데이터 수집, 학습, 인식 단계로 구성되는데, 데이터 수집 단계는 각 개인별 사진을 파일로 저장하는 과정
+- 학습 단계는 저장된 이미지 파일들의 특징을 추출해 내는 과정
+- 마지막 인식 단계는 카메라의 영상에서 실시간으로 각 사람들을 구별하는 과정
+<br>
 
-###### Step 2 data training
-- Based on the photos stored in the PC, the code learns that the person is not 'Unknown'.
+---
 
-###### Step 3 Data Recognition
-- Pre-work on the number of people you want to recognize through the camera and what name they will recognize and exhibit.
+ ### 🔶 라즈베리파이4와 카메라 등의 H/w를 연결하고 다음과 같이 진행합니다.
+
+###### Step 1 데이터 수집
+- 라즈베리파이 4에 연동된 카메라를 통해 인식하고 싶은 사람의 얼굴을 미리 캡쳐하여 PC에 저장, 더 많이 촬영할수록 더 많은 데이터가 축적
+
+###### Step 2 데이터 학습
+- PC에 저장된 사진을 기반으로 카메라를 통해 인식되는 사람이 '알 수 없는(Unknown)' 사람이 아니라는 것을 학습
+
+
+###### Step 3 데이터 인식
+- 카메라를 통해 인식하고 싶은 사람의 수와 전시될 이름을 사전에 작업
+<br>
+
+## 🔸 결과
+![캡처](https://user-images.githubusercontent.com/79084294/147276679-6715bdaf-2b95-42f5-aee4-f244c6a9b7bd.PNG)
+<br>
+
+## 🔸 기대효과
+- 대기전력 저감 효과
+  - 기존의 방범용 CCTV의 경우 상시 관할 구역을 감시
+  - OpenCV 머신러닝은 기존의 저장된 이미지를 학습하고, 구역 내 인가자를 인식 및 식별하여 대기전력으로 소모될 에너지 절약
+  - 이로 인해 에너지 소비 효율을 높이고, CO2 저감 효과도 뛰어남
